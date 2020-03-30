@@ -1,4 +1,4 @@
-module.exports = (msg) => {
+const SHA1 = msg => {
     function rotate_left(n,s) {
     var t4 = ( n<<s ) | (n>>>(32-s));
     return t4;
@@ -131,3 +131,5 @@ module.exports = (msg) => {
    
     return temp.toLowerCase();
    };
+
+   module.exports = SHA1;
